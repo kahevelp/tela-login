@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TESTE</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <URL>
+    </URL>
+</head>
+
+<body>
+    <script src="main.js"></script>s
+    <main class="container">
+        <form>
+            <h1> Tela Login </h1>
+            <div class="input-box">
+                <label for="Usuário">Usuario</label>
+                <input type="text" id="Usuário" name="Usuário" placeholder="Digite seu Usuário" required>
+                <img width="10" height="10" src="https://img.icons8.com/material-outlined/24/user--v1.png"
+                    alt="user--v1" />
+            </div>
+            <div class="input-box">
+                <label for="Senha">Senha</label>
+                <input type="password" id="Senha" name="Senha" placeholder="Digite sua Senha" required>
+                <img width="10" height="10" src="https://img.icons8.com/material-outlined/24/password.png"
+                    alt="password" />
+            </div>
+            <a href="senha.html">Esqueci minha senha</a>
+            <div class="box">
+                <button TYPE="submit" value="Entrar" id="Entrar" onclick="Entrar(); return false; </button>
+                <button type="reset" value="Limpar" id="Limpar">Limpar</button>
+            </div>
+            <a href="cadastro.html">Não está cadastrado? Cadastra-se agora!</a>
+            <nav class="nav"></nav>
+    </main>
+    </form>
+    </nav>
+</body>
+ <script>
+    function Entrar() {
+        var Usuário = document.getElementById('Usuário').value;
+        var Senha = document.getElementById('Senha').value;
+        char [25];
+        if (Usuário == Usuário && Senha == Senha){
+            alert("Login realizado com sucesso!");
+            location.href = "local.html";
+        } else {
+            alert("Usuário ou senha incorretos!");
+        }
+        }
+    }
+</html>
